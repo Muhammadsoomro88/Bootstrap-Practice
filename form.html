@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            padding-left: 600px; 
+            padding-top: 150px;
+        }
+        input[type="text"],[type="email"],[type="password"]{
+            border-radius: 15px;
+            height: 40px;
+            width: 300px;
+        }
+        button{
+            float: center;
+            text-align: left;
+            margin-left: 120px;
+        }
+        .card{
+            background-image: url('https://th.bing.com/th/id/OIP.GFPPhWx7mMeU6x1np15BIAHaNK?w=187&h=333&c=7&o=5&dpr=1.25&pid=1.7');
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <div class="card" style="width: 400px; border: 2px solid black;">
+        <div class="card-body">
+            <form class="form needs-validation" onsubmit="validForm()">
+                <div class="input-group">
+                    <input type="text" class="input form-control" id="name" placeholder="Enter your name" />
+                </div>
+                <br/>
+                <div class="input-group">
+                    <input type="email" class="input form-control" id="email" placeholder="Enter your email" />
+                </div>
+                <br/>
+                <div class="input-group">
+                    <input type="password" class="input form-control" id="pass" placeholder="Enter your password" />
+                </div>
+                <br/>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Keep me logged in
+                    </label>
+                </div>
+                <br/><br/><br/><br/>
+                <button class="btn btn-dark btn-lg" type="submit">Login &raquo;</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        function validForm(){
+            var name = document.getElementById('name').value;
+            var mail = document.getElementById('email').value; 
+            var pass = document.getElementById('pass').value;
+            if(name=""){
+                alert('Error');
+            } 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>bootstrap</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <h1>Welcome ya habibi..</h1>
+    </div>
+    <div class="alert alert-secondary alert-dismissible fade show">
+        <strong>Welcome</strong> to Contour Software Pvt. Ltd.
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <img class="rounded" src="https://th.bing.com/th/id/OIP.zT8TX-hL288eAq_kpHlXnAHaFj?w=197&h=180&c=7&o=5&dpr=1.25&pid=1.7">
+        </div>
+        <div class="col">
+                <img class="rounded-circle img-thumbnail img-fluid" src="https://th.bing.com/th/id/OIP.V2-6fUi0i9gZHp9DGePc6wHaEo?w=316&h=187&c=7&o=5&dpr=1.25&pid=1.7">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p>Use <kbd>ctrl + t</kbd> for opening new tab in the Browser</p>
+        <br/>
+        <p class="bg-danger text-white pt-2">Welcome to Contour ~ Constellation Software</p>
+
+        <table class="table table-dark table-striped table-hover">
+            <tr>
+                <th>Name</th>
+                <th>Office</th>
+            </tr>
+            <tr>
+                <td>Muhammad</td>
+                <td>Contour Software</td>
+            </tr>
+            <tr>
+                <td>Aaqib</td>
+                <td>Remotebase</td>
+            </tr>
+            <tr>
+                <td>Yasir</td>
+                <td>Clinical Computing</td>
+            </tr>
+        </table>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Primary</button>
+        <button class="btn btn-success">Primary</button>
+        <button class="btn btn-info">Primary</button>
+        <button class="btn btn-warning">Primary</button><br/>
+        <button class="btn btn-danger btn-lg btn-block">Primary</button>
+        <br/><br/>
+        <button type="button" id="btn" class="btn btn-primary">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Message <span id="spn" class="badge badge-light">4</span>
+        </button>
+        <br/><br/>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%">40%</div>
+        </div>
+        <div class="spinner-border"></div>
+        <div class="card" style="width: 290px;border: 1px solid black;"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-body">
+                        <img src="https://th.bing.com/th/id/OIP.zT8TX-hL288eAq_kpHlXnAHaFj?w=197&h=180&c=7&o=5&dpr=1.25&pid=1.7">
+                        <div class="container">
+                            <h6>Muhammad Soomro</h6>
+                            <p>Muhammad Soomro joined recently our contour admin team as a Trainee Software Developer.</p>
+                            <button class="btn btn-primary">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <img src="https://th.bing.com/th/id/OIP.zT8TX-hL288eAq_kpHlXnAHaFj?w=197&h=180&c=7&o=5&dpr=1.25&pid=1.7">
+                        <div class="container">
+                            <h6>Neeraj Birjo</h6>
+                            <p>Muhammad Soomro joined recently our contour admin team as a Trainee Software Developer.</p>
+                            <button class="btn btn-primary">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <img src="https://th.bing.com/th/id/OIP.zT8TX-hL288eAq_kpHlXnAHaFj?w=197&h=180&c=7&o=5&dpr=1.25&pid=1.7">
+                        <div class="container">
+                            <h6>Yasir Hussain</h6>
+                            <p>Muhammad Soomro joined recently our Clinical Computing team as a Junior Software Developer.</p>
+                            <button class="btn btn-primary">
+                                View Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('button#btn').click(function(){
+                var x = $('span#spn').text();
+                x-=1;
+                $('span#spn').text(x);
+            })
+        })
+    </script>
+</body>
+</html>
